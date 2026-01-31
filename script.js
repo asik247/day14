@@ -156,3 +156,29 @@ const furnutureGenerate = (chair,table,bed)=>{
 
 }
 console.log(furnutureGenerate(3,2,1));
+// short version:
+const woodCalculator = (c,t,b) =>{
+   return c*3+t*10+b*50;
+}
+console.log(woodCalculator(3,2,1));
+
+const mobile = [
+    {moble:"samsung",price:20000},
+    {moble:"redmi",price:10000},
+    {moble:"oppo",price:5000},
+]
+// for (p of mobile){
+//     console.log(p.price);
+// }
+// console.log(mobile[0].price);
+const cheapestPhone = (price)=>{
+    let cheap = price[0];
+    for (p of price){
+        if(p.price < cheap.price){
+            cheap = p;
+        }
+    }
+    return cheap;
+}
+let cheapResult = cheapestPhone(mobile);
+console.log(cheapResult);
