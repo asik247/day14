@@ -125,7 +125,7 @@ Interview logic explain
  */
 // Who is the tollest code start here:
 let height = [65, 75, 45, 66, 78, 78, 68];
-let tollest = Math.max(height);
+let tollest = Math.max(...height);
 console.log(tollest);
 // output NaN because Math.max array nite pare na:
 
@@ -133,7 +133,7 @@ console.log(tollest);
 let manHeight = [58, 85, 99, 73, 145, 787, 14525];
 const getTollest = (heightInc) => {
     let firstInch = heightInc[0]
-    console.log(firstInch);
+    // console.log(firstInch);
     for (let h of heightInc) {
         if (h > firstInch) {
             firstInch = h;
@@ -142,3 +142,17 @@ const getTollest = (heightInc) => {
     return firstInch;
 }
 console.log(getTollest(manHeight));
+
+const furnutureGenerate = (chair,table,bed)=>{
+    const perChair = 3;
+    const perTable = 10;
+    const perBed = 50;
+
+    const chairWood = chair * perChair;
+    const tableWood = table * perTable;
+    const bedWood = bed * perBed;
+    const totalWood = chairWood + tableWood + bedWood;
+    return totalWood;
+
+}
+console.log(furnutureGenerate(3,2,1));
