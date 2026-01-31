@@ -77,3 +77,24 @@ console.log(one,two,three,four);
  * temp - > Temporary variable use korbo amera:
  * [a,b] = [b,a] kore jai
  */
+// Max output a show kore: code hre:
+// Way no:01
+const nadiya = 55;
+const shohan = 44;
+if(nadiya>shohan){
+    console.log("Nadiya can big number:",nadiya);
+}else{
+    console.log("shohan can big number:",shohan);
+}
+// Way no: 02;
+const getMax = (num1,num2)=>{
+    if(num1>num2){
+        return num1;
+    }else{
+        return num2
+    }
+}
+console.log(getMax(10,11));
+// use getMax:
+const max = getMax(111,252);
+console.log(max);
