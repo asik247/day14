@@ -98,3 +98,32 @@ console.log(getMax(10,11));
 // use getMax:
 const max = getMax(111,252);
 console.log(max);
+// use Math.max:
+const max2 = Math.max(10,20,25,58);
+console.log(max2); 
+/**
+ * Math.max = ready-made tool
+getMax = নিজের বানানো logic
+কখন কোনটা use করবে?
+✔ Math.max() ব্যবহার করো যখন:
+
+Simple number compare
+
+Quick solution দরকার
+
+Small/medium data
+
+✔ getMax() বানাও যখন:
+
+Condition দরকার (even max, odd max)
+
+Object থেকে max বের করা
+
+Learning purpose
+
+Interview logic explain
+ */
+// Who is the tollest code start here:
+let height = [65,75,45,66,78,78,68];
+let tollest = Math.max(height);
+console.log(tollest);
