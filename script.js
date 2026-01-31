@@ -200,3 +200,7 @@ const calculateShoping = (cost)=>{
 }
 const shopingTotal = calculateShoping(shopping)
 console.log(shopingTotal);
+/**
+ * 21.5 vedio complete
+ * next day worked reduce array method:
+ */
