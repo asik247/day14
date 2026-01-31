@@ -34,3 +34,13 @@ console.log(total[total3]);
  * 1.Math.ceil 4.999 k 5 kore
  * 2.Math.floor 4.999 k 4 kore
  */
+
+// new Date start:
+let functionDay = new Date();
+let day = functionDay.getDay();
+let minute = functionDay.getMinutes()
+let date = functionDay.getDate();
+// let day = functionDay.getDay();
+console.log(day);
+console.log(minute);
+console.log(date);
