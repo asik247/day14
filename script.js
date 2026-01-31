@@ -141,5 +141,4 @@ const getTollest = (heightInc) => {
     }
     return firstInch;
 }
-// getTollest(manHeight)
 console.log(getTollest(manHeight));
