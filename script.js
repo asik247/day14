@@ -182,3 +182,21 @@ const cheapestPhone = (price)=>{
 }
 let cheapResult = cheapestPhone(mobile);
 console.log(cheapResult);
+// shping total:
+const shopping = [
+    {itme:'vimber',price:20,quentity:2},
+    {itme:'ponds',price:200,quentity:1},
+    {itme:'shampu',price:5,quentity:10},
+    {itme:'gash',price:2000,quentity:1}
+]
+const calculateShoping = (cost)=>{
+    let sum = 0;
+    for(shop of cost){
+        // console.log(shop);
+        let totalCost = shop.price * shop.quentity;
+        sum = sum + totalCost
+    }
+    return sum;
+}
+const shopingTotal = calculateShoping(shopping)
+console.log(shopingTotal);
