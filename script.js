@@ -60,3 +60,20 @@ let temp2 = myName;
 myName = xName;
 xName = temp2;
 console.log(myName,xName);
+let one = 1;
+let two =  2;
+let three = 3;
+let four = 4;
+let tempOne = one;
+let tempThree = three;
+one = two;
+two = tempOne;
+three = four;
+four = tempThree;
+console.log(one,two,three,four);
+
+/**
+ * Swap use hoy দুইটা variable-এর value একে অপরের সাথে বদলানো
+ * temp - > Temporary variable use korbo amera:
+ * [a,b] = [b,a] kore jai
+ */
