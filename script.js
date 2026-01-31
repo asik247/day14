@@ -44,3 +44,19 @@ let date = functionDay.getDate();
 console.log(day);
 console.log(minute);
 console.log(date);
+// Swap and temp use code start hre:
+let a = 5;
+let b = 15;
+let temp = a;
+a = b;
+b = temp;
+// let ab = temp = b;
+console.log(a,b);
+
+let myName = "Asik";
+let xName = "kahn"
+
+let temp2 = myName;
+myName = xName;
+xName = temp2;
+console.log(myName,xName);
