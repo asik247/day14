@@ -36,3 +36,18 @@ let reduceResutl = marks.reduce(function(acc,curr){
 console.log("reduceResutl here:",reduceResutl);
 
 // 0 + 1 = 1,1+2 = 3, 3 + 333 = 336,336 + 45 = ?
+
+/**
+ * firstThurded = 100;
+ * secondThurded = 90;
+ * thirdThurded = 70;
+ */
+const discoundedPrice = (quentity)=>{
+   if(quentity <= 100){
+      let firstTotal = quentity * 100;
+      return firstTotal;
+   }
+   else if (quentity <=200){
+      
+   }
+}
