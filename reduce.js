@@ -63,6 +63,32 @@ const discoundedPrice = (quentity)=>{
    }
 }
 let result = discoundedPrice(201);
-console.log(result);
+// console.log(result);
 
 // 100
+
+const layerdDiscount = (quentity)=>{
+   const first100 = 200;
+   const second100 = 150;
+   const third100 = 100;
+   if (quentity <= 100){
+      let first100Total = quentity * first100;
+      return first100Total;
+   }else if(quentity <= 200){
+      let second100Total = 100 * first100;
+      let second100Reminig = quentity - 100;
+      let second100ReminigTotal = second100Reminig * second100;
+      let total = second100Total + second100ReminigTotal;
+      return total;
+   }else{
+      let third100Total = 100 * first100;
+      let third100Total2 = 100 * second100;
+      let third100Reminig = quentity - 200;
+      let third100ReminigTotal = third100Reminig * third100;
+      let total = third100Total + third100Total2 + third100ReminigTotal;
+      return total;
+   }
+}
+// console.log(layerdDiscount(100));
+let result2 = layerdDiscount(500);
+console.log(result2);
