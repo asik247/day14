@@ -48,6 +48,21 @@ const discoundedPrice = (quentity)=>{
       return firstTotal;
    }
    else if (quentity <=200){
-      
+      let firstTotal = 100 * 100;
+      let remining = quentity - 100; 
+      let reminingTotal = remining * 90;
+      let total = firstTotal + reminingTotal;
+      return total
+   }else{
+      let firstTotal = 100 * 100;
+      let scondTotal = 100 * 90;
+      let remining = quentity - 200;
+      let reminingTotal = remining * 70;
+      let total = firstTotal + scondTotal + reminingTotal;
+      return total
    }
 }
+let result = discoundedPrice(201);
+console.log(result);
+
+// 100
